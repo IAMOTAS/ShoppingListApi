@@ -10,6 +10,7 @@ namespace ShoppingListApi.Models
             
         }
 
-        public DbSet<Grocery> Grocery { get; set; }
+        public DbSet<Grocery> Grocery { get; set; } 
+
     }
 }
