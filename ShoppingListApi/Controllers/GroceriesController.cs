@@ -81,7 +81,7 @@ namespace ShoppingListApi.Controllers
             _context.Grocery.Add(grocery);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetGrocery", new { id = grocery.Id }, grocery);
+            return CreatedAtAction(nameof(GetGrocery), new { id = grocery.Id }, grocery);   
         }
 
         // DELETE: api/Groceries/5

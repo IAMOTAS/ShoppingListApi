@@ -7,10 +7,12 @@ namespace ShoppingListApi.Models
     {
         public ShoppingListContext(DbContextOptions<ShoppingListContext>options):base(options)
         {
-            
+          
         }
 
         public DbSet<Grocery> Grocery { get; set; } 
 
     }
+
+   
 }
